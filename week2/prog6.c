@@ -73,7 +73,7 @@ int nextmonth(int &day,int &month,int &year)
     {
         if(month%2!=0 && day==30)
             return month+1;
-        if(month==12)
+        if(month==12 && day==31)
             return 1;
     }
         return month;

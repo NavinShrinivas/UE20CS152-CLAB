@@ -10,16 +10,16 @@ int main(){
     switch(choice)
     {
         case '+':
-            printf("Result : %.2f",a+b);
+            printf("%.2f+%.2f : %.2f",a,b,a+b);
             break;
         case '-':
-            printf("Result : %.2f",a-b);\
+            printf("%.2f-%.2f : %.2f",a,b,a-b);
             break;
         case '*':
-            printf("Result : %.2f",a*b);
+            printf("%.2f*%.2f : %.2f",a,b,a*b);
             break;
         case '/':
-            printf("Result : %.2f",a/b);
+            printf("%.2f/%.2f : %.2f",a,b,a/b);
             break;
         default:
             printf("Please enter a correct choice for operands");

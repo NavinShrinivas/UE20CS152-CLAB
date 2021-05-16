@@ -11,5 +11,5 @@ int main(){
             str[i]=str[i]-32;
         i++;
     }
-    printf("Enter string in UPPERCASE: \n %s",str);
+    printf("Entered string in UPPERCASE: \n %s",str);
 }
