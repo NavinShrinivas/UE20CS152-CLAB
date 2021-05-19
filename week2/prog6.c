@@ -1,8 +1,9 @@
 #include<stdio.h>
-#include <stdlib.h>
+#include<stdlib.h>
+#include<stdbool.h>
 
 
-bool validdate(int &day,int &month,int &year)
+bool validdate(int day,int month,int year)
 {
     if(month>12 || month<=0)
         return false;
@@ -30,7 +31,7 @@ bool validdate(int &day,int &month,int &year)
     return true;
 }
 
-int nextday(int &day,int &month,int &year)
+int nextday(int day,int month,int year)
 {
     if(year%4==0) //corner cases of leap years
     {
@@ -55,7 +56,7 @@ int nextday(int &day,int &month,int &year)
     }
         return day+1;
 }
-int nextmonth(int &day,int &month,int &year)
+int nextmonth(int day,int month,int year)
 {
     if(year%4==0) //corner cases of leap years
     {
@@ -78,7 +79,7 @@ int nextmonth(int &day,int &month,int &year)
     }
         return month;
 }
-int nextyear(int &day,int &month,int &year)
+int nextyear(int day,int month,int year)
 {
     if(month==12 && day==31)
         return year+1;

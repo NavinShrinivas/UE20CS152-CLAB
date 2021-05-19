@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-const char* grade(int &grade)
+const char* grade(int grade)
 {
     if(grade>85)
         return "A";

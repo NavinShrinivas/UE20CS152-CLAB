@@ -5,7 +5,7 @@
 int main(){
     char str[100000];
     printf("Input:");
-    scanf("%s",&str);
+    fgets("%s",&str);
     char init=str[0];
     printf("%c",str[0]);
     for(int i=0;i<strlen(str);i++)
