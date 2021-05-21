@@ -1,7 +1,5 @@
 #include<stdio.h>
-
 #include<stdbool.h>
-
 int recursegdc(int a, int b) {
   if (a == 0)
     return b;

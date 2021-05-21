@@ -1,6 +1,4 @@
 #include<stdio.h>
-
-
 int c = 0;
 void recurseoctal(int * n, int rems[]) {
   if ( * n < 8) {
@@ -14,7 +12,6 @@ void recurseoctal(int * n, int rems[]) {
     recurseoctal(n, rems);
   }
 }
-
 int main() {
   int n;
   printf("Enter a number[BASE 10] :");

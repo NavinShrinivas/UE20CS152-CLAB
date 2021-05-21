@@ -1,16 +1,12 @@
 #include<stdio.h>
-
 #include<stdbool.h>
-
 void recurseperfect(int * copy, int n, int * sum) {
   if (n == 1) {
     * sum + 1;
     return;
   }
-
   if ( * copy % n == 0)
-    *
-    sum = * sum + n;
+    *sum = * sum + n;
   recurseperfect(copy, n - 1, sum);
 }
 bool armstrong(int n) {

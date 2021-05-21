@@ -1,5 +1,4 @@
 #include<stdio.h>
-
 int main() {
   int first = 0;
   int second = 1;
@@ -13,5 +12,4 @@ int main() {
     first = second;
     second = temp + second;
   }
-
 }
