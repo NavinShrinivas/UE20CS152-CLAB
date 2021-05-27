@@ -1,0 +1,1 @@
+void pointerreverse(int a[],int n);
