@@ -9,7 +9,6 @@ bool isprime(int n)
     }
     return true;
 }
-
 int nextprime(int n)
 {
     int c=n+1;
