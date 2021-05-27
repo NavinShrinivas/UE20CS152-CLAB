@@ -2,7 +2,6 @@
 #include<stdbool.h>
 #include<math.h>
 #include"1_1.h"
-#include"1_2.h"
 
 int main(){
     int n;

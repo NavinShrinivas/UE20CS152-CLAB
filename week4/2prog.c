@@ -1,5 +1,6 @@
-#include"2_2.h"
+#include"2_1.h"
 #include<stdio.h>
+
 int main(){
     int n,r;
     printf("Enter two number in the form n r to find combinations :");
