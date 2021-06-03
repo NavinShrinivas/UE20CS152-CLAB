@@ -1,0 +1,1 @@
+void ocurrence(char* c);

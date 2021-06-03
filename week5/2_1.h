@@ -1,0 +1,1 @@
+void charreplace(char* c,char r,char w);

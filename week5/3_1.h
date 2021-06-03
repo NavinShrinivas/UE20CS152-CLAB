@@ -1,0 +1,1 @@
+void noduplicate(char* c , char* out);
