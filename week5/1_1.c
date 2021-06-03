@@ -1,4 +1,3 @@
-#include<stdbool.h>
 #include<stdio.h>
 
 void reversestring(char* rev,char* c)
@@ -11,7 +10,6 @@ void reversestring(char* rev,char* c)
         *(rev+n-i-1)=*(c+i);
     *(rev+n)='\0';
 }
-
 bool palindrome(char* c)
 {
     int n=0;

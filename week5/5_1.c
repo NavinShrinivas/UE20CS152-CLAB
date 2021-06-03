@@ -3,7 +3,6 @@
 
 void ocurrence(char* c)
 {
-
     int lookup[123]={0}; 
     /*this pesudo implementation of hash tables will allow us 
     to solve this problem in O(n) instead of O(n^2)worst case senarios*/
