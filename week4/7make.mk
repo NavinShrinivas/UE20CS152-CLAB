@@ -3,6 +3,3 @@ all : 7_1.o 7prog.o
 	gcc -c 7_1.c
 7prog.o : 7_1.o 7prog.c
 	gcc 7_1.o 7prog.c -o 7prog.o
-clean:
-	rm -r 7prog.o; \
-	rm -r 7_1.o

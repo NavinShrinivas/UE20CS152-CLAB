@@ -7,7 +7,7 @@ int main(){
     scanf("%i",&n);
     int a[n];
     populatefibbonaci(a,n);
-    printf("Generated fibbonaci series is : \n");
+    printf("Generated fibbonaci series is  \n");
     for(int i=0;i<n;i++)
     {
         printf("%i ",a[i]);
