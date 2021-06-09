@@ -29,7 +29,6 @@ int main(){
         printf("The given matrix is symmetric : \n");
     else
         printf("Given matrix is not symmetric : \n");
-
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n;j++)
