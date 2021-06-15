@@ -16,7 +16,7 @@ int main(){
             else if(j>=i)
                 *(*(a+i)+j)=1;
             else    
-                *(*(a+i)+j)=i;
+                *(*(a+i)+j)=*(*(a+i-1)+j)+*(*(a+i-1)+j-1);;
         }
     }
     for(int i=0;i<n;i++)
