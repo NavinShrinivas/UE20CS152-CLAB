@@ -6,9 +6,9 @@ int main(){
     {
         for(int j=0;j<5;j++)
         {
-            if(i==5-j)
+            if(i==4-j)
                 *(*(a+i)+j)=0;
-            else if(i<5-j) 
+            else if(i<4-j) 
                 *(*(a+i)+j)=1;
             else    
                 *(*(a+i)+j)=-1;
