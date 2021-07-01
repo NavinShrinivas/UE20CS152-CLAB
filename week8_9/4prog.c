@@ -13,8 +13,6 @@ void swap(char* a[1][2],int b,int c)
 }
 void bubbleroll(int n;char* a[n][2]  , int n)
 {
-    int largest=0;
-    int larpos=0;
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n-i-1;j++)
@@ -28,8 +26,6 @@ void bubbleroll(int n;char* a[n][2]  , int n)
 }
 void bubblename(int n;char* a[n][2]  , int n)
 {
-    char* largest=a[0][1];
-    int larpos=0;
     for(int i=0;i<n;i++)
     {
         for(int j=0;j<n-i-1;j++)
