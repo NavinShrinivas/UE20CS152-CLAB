@@ -4,21 +4,12 @@
 
 void swap(char* a[1][2],int b,int c)
 {
-    char* temp=a[b][0];
+    char* temp = a[b][0];
     a[b][0]=a[c][0];
     a[c][0]=temp;
     temp=a[b][1];
     a[b][1]=a[c][1];
     a[c][1]=temp;
-}
-void swap1(char* a[1][2],int b,int c)
-{
-    char* temp=a[b][1];
-    a[b][1]=a[c][1];
-    a[c][1]=temp;
-    temp=a[b][0];
-    a[b][0]=a[c][0];
-    a[c][0]=temp;
 }
 void bubbleroll(int n;char* a[n][2]  , int n)
 {
