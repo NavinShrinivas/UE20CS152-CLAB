@@ -47,7 +47,7 @@ int main(){
     char data[1000];
     fscanf(f,"%[^NULL]%*c",data);
     char* split=data;
-    char* token1=strtok_r(split,"\n",&split);
+    char* token1=strtok_r(split,"\n",&split); //if on windows use strtok_s , soowwy!
     char* raw[100][2];
     int i=0;
     while(token1!=NULL)
