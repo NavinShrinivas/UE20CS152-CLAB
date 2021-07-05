@@ -47,16 +47,23 @@ int main(){
     char data[1000];
     fscanf(f,"%[^NULL]%*c",data);
     char* split=data;
-    char* token1=strtok_r(split,"\n",&split); //if on windows use strtok_s , soowwy!
-    char* raw[100][2];
-    int i=0;
+    char* token1=strtok(split,"\n");
+    char* raw1[100];
+    int z=0;
     while(token1!=NULL)
     {
-        char* token2=strtok(token1,",");
-        raw[i][0]=token2;
+        raw1[z]=token1;
+        token1=strtok(NULL,"\n");
+        z++;
+    }
+    char* raw2[100][2];
+    int i=0;
+    while(i<z)
+    {
+        char* token2=strtok(raw1[i],",");
+        raw2[i][0]=token2;
         token2=strtok(NULL,",");
-        raw[i][1]=token2;
-        token1=strtok_r(split,"\n",&split);
+        raw2[i][1]=token2;
         i++;
     }
     int flag=1;
@@ -76,8 +83,8 @@ int main(){
             char* copy[100][2];
             for(int c=0;c<i;c++)
             {
-                copy[c][0]=raw[c][0];
-                copy[c][1]=raw[c][1];
+                copy[c][0]=raw2[c][0];
+                copy[c][1]=raw2[c][1];
             }
             csvsort(bubbleroll,copy,i);
             printf("List after sorting by roll number : \n");
@@ -91,8 +98,8 @@ int main(){
             char* copy[100][2];
             for(int c=0;c<i;c++)
             {
-                copy[c][0]=raw[c][0];
-                copy[c][1]=raw[c][1];
+                copy[c][0]=raw2[c][0];
+                copy[c][1]=raw2[c][1];
             }
             csvsort(bubblename,copy,i);
             printf("List after sorting by name : \n");
@@ -105,7 +112,7 @@ int main(){
         {
             for(int c=0;c<i;c++)
             {
-                printf("%s %s\n",*(*(raw+c)+0),*(*(raw+c)+1));
+                printf("%s %s\n",*(*(raw2+c)+0),*(*(raw2+c)+1));
             }
         }
 
