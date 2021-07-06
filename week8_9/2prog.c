@@ -18,6 +18,8 @@ int main() {
         scanf(" %[^\n]%*c", temp);
         strcat(data, temp);
         strcat(data, new);
+        fflush(stdin);
+        fflush(stdout);
     }
     FILE * f = fopen(file, "w+");
     fprintf(f, "%s", data);
