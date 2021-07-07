@@ -25,4 +25,5 @@ int main() {
     fprintf(f, "%s", data);
     printf("Contents of the file %s is : \n", file);
     printf("%s", data);
+    fclose(f);
 }
