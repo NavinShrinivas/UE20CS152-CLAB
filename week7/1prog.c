@@ -14,11 +14,11 @@ void read5(){
     {
         printf("Player %d : \n",i+1);
         printf("Enter player name : ");
-        scanf(" %[^\n]%c",temppname);
+        scanf(" %[^\n]%*c",temppname);
         (players+i)->player_name=(char *)malloc(50);
         strcpy((players+i)->player_name,temppname);
         printf("Enter team name : ");
-        scanf(" %[^\n]%c",temptname);
+        scanf(" %[^\n]%*c",temptname);
         (players+i)->team_name=(char *)malloc(50);
         strcpy((players+i)->team_name,temptname);
         printf("Enter batting average :");
