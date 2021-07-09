@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-enum month{rand,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec};
+enum month{ran,jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec};
 
 struct enummap{
     char* usermon;
