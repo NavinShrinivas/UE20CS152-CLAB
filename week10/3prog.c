@@ -13,7 +13,7 @@ struct enummap{
 
 int nextflag;
 
-void next(char day,enum month mon)
+void next(char day,enum month mon) //this checks of the next day is not in the current month
 {
     if(mon==2 && day==29) //we dont have year so assuming years are never leap
             nextflag=1;
